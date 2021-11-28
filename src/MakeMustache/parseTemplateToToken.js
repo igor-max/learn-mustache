@@ -28,7 +28,6 @@ import Scanner from './Scanner';
 // }
 
 function nextTokens(tokens) {
-  console.log(tokens);
   const result = [];
   let collect = result;
   const stack = [];
@@ -48,7 +47,7 @@ function nextTokens(tokens) {
         break;
     }
   });
-  console.log(result);
+  return result;
 }
 
 export default function parseTemplateToToken(template) {
