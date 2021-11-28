@@ -5,12 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script id="template" type="x-tmpl-mustache">
+    <!-- <script id="template" type="x-tmpl-mustache">
       <ul>
         {{#data}}
           <li>name: {{ name }} --- age: {{ age }}</li>
         {{/data}}
       </ul>
+    </script> -->
+    <script type="template" id="template">
+      <div>
+        <p>我的名字是{{name}}，我今年{{age}}岁了</p>
+        <ul>
+          {{#data}}
+            <li>
+              <p>{{a}}</p>
+              {{#hobby}}
+                <span>{{.}}</span>
+              {{/hobby}}
+            </li>
+          {{/data}}
+        </ul>
+      </div>
     </script>
   </head>
   <body>
